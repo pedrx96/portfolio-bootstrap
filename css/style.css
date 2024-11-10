@@ -1,0 +1,76 @@
+/* Define que cada seção ocupa no mínimo 90% altura da tela */
+section {
+  min-height: 85vh;
+  margin: 0; /* Remover qualquer margem extra */
+  padding: 0; /* Remover qualquer padding extra */
+}
+
+/* Corrigir a altura do body e html */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* A navbar fixa no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Garantir que a navbar esteja no topo de outros elementos */
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd; /* Adicionando uma borda inferior para destacar */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+}
+
+/* Garantir que o conteúdo da página não fique atrás da navbar */
+body {
+  padding-top: 0; /* Remover o padding-top */
+}
+
+/* Ajustando a margem superior das seções para não sobrepor a navbar */
+section {
+  margin-top: 70px; /* Ajuste para que o conteúdo não fique atrás da navbar */
+}
+
+/* Ajustando o espaçamento das seções */
+section.principal,
+section.sobre,
+section.projetos,
+section.contato {
+  padding-top: 20px; /* Ajustando o espaçamento das seções, se necessário */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Imagens nas seções */
+img {
+  object-fit: cover; /* Garante que a imagem cubra completamente o espaço */
+  width: 100%; /* A largura será 100% do seu container */
+  height: 100%; /* A altura será 100% do seu container */
+}
+
+/* Estilo para o formulário de contato */
+form input, form textarea {
+  border-radius: 0.375rem; /* Borda arredondada */
+  padding: 0.75rem; /* Preenchimento confortável */
+  font-size: 1rem; /* Tamanho de fonte legível */
+  width: 100%;
+}
+
+form button {
+  padding: 0.75rem 1.5rem; /* Tamanho do botão */
+  font-size: 1.1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.375rem;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
